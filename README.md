@@ -34,10 +34,12 @@ Cross-validation confirmed these features improved R² from 0.8735 to 0.8876.
 Used Pearson correlation and Random Forest feature importances to identify and drop 4 low-signal features (Status, Liquid Critical Pressure, Liquid Boiling Temperature, Liquid Critical Temperature), with no loss in CV performance.
 
 # Models Compared
-ModelR² (val)MAPE (val)RMSE (val)Ridge 
-Regression 0.77 0.41 — 
-Random Forest 0.96 0.16 —
-Neural Network (MLP) 0.97 0.13 —
+| Model | R² (val) | MAPE (val) |
+|---|---|---|
+| Ridge Regression | 0.77 | 0.41 |
+| Random Forest | 0.96 | 0.16 |
+| **Neural Network (MLP)** | **0.97** | **0.13** |
+
 
 # Hyperparameter Tuning
 - Ridge: Grid search over alpha [0.01, 0.1, 1, 10, 100, 1000]
@@ -48,12 +50,10 @@ Neural Network (MLP) 0.97 0.13 —
 Neural Network (MLP) — selected for lowest validation MAPE (0.13). Retrained on the full training set before generating test predictions. Log-transformed predictions converted back to bar scale via exp().
 
 # Results
-
-
 | Set | MAPE | R² |
-| -------------| ------------- | ------------- |
-| Validation | 0.13  | 0.13  |
-| Kaggle Private Test | 0.1926  | — |
+|---|---|---|
+| Validation | 0.13 | 0.97 |
+| Kaggle Private Test | **0.1926** | — |
 Set MAPE R² 
 Validation 0.13 0.97 
 Kaggle Private Test 0.1926 —
