@@ -48,6 +48,12 @@ Neural Network (MLP) 0.97 0.13 —
 Neural Network (MLP) — selected for lowest validation MAPE (0.13). Retrained on the full training set before generating test predictions. Log-transformed predictions converted back to bar scale via exp().
 
 # Results
+
+
+| Set | MAPE | R² |
+| -------------| ------------- | ------------- |
+| Validation | 0.13  | 0.13  |
+| Kaggle Private Test | 0.1926  | — |
 Set MAPE R² 
 Validation 0.13 0.97 
 Kaggle Private Test 0.1926 —
