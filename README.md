@@ -54,9 +54,6 @@ Neural Network (MLP) — selected for lowest validation MAPE (0.13). Retrained o
 |---|---|---|
 | Validation | 0.13 | 0.97 |
 | Kaggle Private Test | **0.1926** | — |
-Set MAPE R² 
-Validation 0.13 0.97 
-Kaggle Private Test 0.1926 —
 
 # Tech Stack
 - Python, Jupyter Notebook (Google Colab)
